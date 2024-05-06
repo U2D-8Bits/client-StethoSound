@@ -5,6 +5,8 @@ import { AuthRoutingModule } from './auth-routing.module';
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { PrimengModule } from '../primeng/primeng.module';
 
 
 @NgModule({
@@ -16,6 +18,9 @@ import { RegisterPageComponent } from './pages/register-page/register-page.compo
   imports: [
     CommonModule,
     AuthRoutingModule,
+    ReactiveFormsModule,
+
+    PrimengModule
   ],
   exports:[
     AuthLayoutComponent
