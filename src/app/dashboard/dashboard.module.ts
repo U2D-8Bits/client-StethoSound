@@ -6,6 +6,7 @@ import { DashboardLayoutComponent } from './layouts/dashboard-layout/dashboard-l
 import { WelcomePageComponent } from './pages/welcome-page/welcome-page.component';
 import { UsersPageComponent } from './pages/users-page/users-page.component';
 import { SettingsPageComponent } from './pages/settings-page/settings-page.component';
+import { PrimengModule } from '../primeng/primeng.module';
 
 
 @NgModule({
@@ -17,7 +18,14 @@ import { SettingsPageComponent } from './pages/settings-page/settings-page.compo
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    PrimengModule
+  ],
+  exports: [
+    DashboardLayoutComponent,
+    WelcomePageComponent,
+    UsersPageComponent,
+    SettingsPageComponent
   ]
 })
 export class DashboardModule { }
