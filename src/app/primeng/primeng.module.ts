@@ -6,6 +6,7 @@ import { ToastModule } from 'primeng/toast';
 import { RippleModule } from 'primeng/ripple';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { TooltipModule } from 'primeng/tooltip';
+import { ToolbarModule } from 'primeng/toolbar';
 @NgModule({
   declarations: [],
   exports:[
@@ -13,6 +14,7 @@ import { TooltipModule } from 'primeng/tooltip';
     ToastModule,
     TabMenuModule,
     TooltipModule,
+    ToolbarModule,
   ]
 })
 export class PrimengModule { }
