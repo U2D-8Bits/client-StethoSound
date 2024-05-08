@@ -1,0 +1,6 @@
+::ng-deep .p-toolbar {
+  border-radius: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
